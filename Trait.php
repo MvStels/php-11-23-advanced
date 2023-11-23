@@ -35,5 +35,5 @@ class Test{
     }
 }
 $getsum = new Test( );
-d($getsum->talk1()+$getsum->talk2()+$getsum->talk3());
+d ($getsum->talk1()+$getsum->talk2()+$getsum->talk3());
 
