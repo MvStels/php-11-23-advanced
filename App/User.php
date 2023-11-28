@@ -9,16 +9,14 @@ class User
 
     }
 
-    public function __cal(string $email): void
+    public function __call(string $email, $arguments): void
     {
-        try {
-            if ($this->setEmail($email) == null) {
-                throw new Exception('Invalid Email');
+
+        if (!method_exists($this, $email)) {
+                throw new WrongException('Invalid Email');
             }
 
-        } catch (Exception $email) {
-            echo $email->getMessage();
-        }
+
     }
 
     private function setEmail(string $email): void
@@ -45,7 +43,7 @@ class User
         $this->age = $age;
     }
 }
-
+class WrongException extends Exception{}
 
 
 
