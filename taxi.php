@@ -95,7 +95,10 @@ class ClassPrice implements TaxiClass
     public function money(): void{
         echo "Ціна (Грн) - $this->prise";
     }
+
 }
+
+
 
 
 
