@@ -11,6 +11,7 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '0e423a14e27410a071e5d815d3ffc856' => __DIR__ . '/..' . '/larapack/dd/src/helper.php',
+        'a5eaf3fad382dc518a601adc42c308f6' => __DIR__ . '/../..' . '/routes/wed.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -19,9 +20,14 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
-        'R' => 
+        'C' => 
         array (
-            'Root\\Html\\' => 10,
+            'Core\\' => 5,
+            'Config\\' => 7,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -34,14 +40,25 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Root\\Html\\' => 
+        'Core\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/core',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
     public static $classMap = array (
+        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Controllers/UsersController.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Core\\Controller' => __DIR__ . '/../..' . '/core/Controller.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
         'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/AmqpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ArgsStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\Caster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/Caster.php',
