@@ -13,7 +13,7 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '0e423a14e27410a071e5d815d3ffc856' => __DIR__ . '/..' . '/larapack/dd/src/helper.php',
-        'a5eaf3fad382dc518a601adc42c308f6' => __DIR__ . '/../..' . '/routes/wed.php',
+        '1352b45948aa23d30e92b4f27af6e4ac' => __DIR__ . '/../..' . '/routes/api.php',
         '38521f91955b3eb761c9cbcb03eb206e' => __DIR__ . '/../..' . '/core/helpers.php',
     );
 
@@ -92,13 +92,17 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
     );
 
     public static $classMap = array (
-        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/Controllers/UsersController.php',
+        'App\\Models\\Folder' => __DIR__ . '/../..' . '/app/Models/Folder.php',
+        'App\\Models\\Note' => __DIR__ . '/../..' . '/app/Models/Note.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Core\\Config' => __DIR__ . '/../..' . '/core/Config.php',
         'Core\\Controller' => __DIR__ . '/../..' . '/core/Controller.php',
         'Core\\Db' => __DIR__ . '/../..' . '/core/Db.php',
+        'Core\\Model' => __DIR__ . '/../..' . '/core/Model.php',
         'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'Core\\Traits\\Queryable' => __DIR__ . '/../..' . '/core/Traits/Queryable.php',
         'Dotenv\\Dotenv' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Dotenv.php',
         'Dotenv\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ExceptionInterface.php',
         'Dotenv\\Exception\\InvalidEncodingException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php',

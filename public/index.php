@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 
 define('BASE_DIR', dirname(__DIR__));
 
@@ -11,16 +12,22 @@ try {
     $dotenv->load();
 
 
-    \Core\Config::get('db.user');
-    // TODO = include env variables
-    if(!preg_match('/assets/i' , $_SERVER['REQUEST_URI'])){ 
-        \Core\Router::dispatch($_SERVER['REQUEST_URI']);
+    $users = User::select()->get();
+    foreach ($users as $user) {
+        d($user->getUserInfo());
     }
 
+    // TODO - include env variables
+    if (!preg_match('/assets/i', $_SERVER['REQUEST_URI'])) {
+        \Core\Router::dispatch($_SERVER['REQUEST_URI']);
+    }
 }
+
+
 catch (PDOException $exception){
 dd('PDOException',$exception);
 }catch (Exception $exception){
     dd('Exception',$exception);
 
 }
+

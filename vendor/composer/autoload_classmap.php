@@ -6,13 +6,17 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controllers\\UsersController' => $baseDir . '/app/Controllers/UsersController.php',
+    'App\\Models\\Folder' => $baseDir . '/app/Models/Folder.php',
+    'App\\Models\\Note' => $baseDir . '/app/Models/Note.php',
+    'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Core\\Config' => $baseDir . '/core/Config.php',
     'Core\\Controller' => $baseDir . '/core/Controller.php',
     'Core\\Db' => $baseDir . '/core/Db.php',
+    'Core\\Model' => $baseDir . '/core/Model.php',
     'Core\\Router' => $baseDir . '/core/Router.php',
+    'Core\\Traits\\Queryable' => $baseDir . '/core/Traits/Queryable.php',
     'Dotenv\\Dotenv' => $vendorDir . '/vlucas/phpdotenv/src/Dotenv.php',
     'Dotenv\\Exception\\ExceptionInterface' => $vendorDir . '/vlucas/phpdotenv/src/Exception/ExceptionInterface.php',
     'Dotenv\\Exception\\InvalidEncodingException' => $vendorDir . '/vlucas/phpdotenv/src/Exception/InvalidEncodingException.php',

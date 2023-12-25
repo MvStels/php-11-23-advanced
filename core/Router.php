@@ -22,7 +22,7 @@ class Router
 
   }
 
-    static  public function dispatch( string $uri): void
+    static  public function dispatch( string $uri):string
     {
 
         $uri = static::removeQueryVariables($uri);
@@ -35,10 +35,16 @@ class Router
             $action = static::getAction($controller);
 
             if($controller->before($action,static::$params)){
-                call_user_func_array([$controller,$action],static::$params);
+                $response = call_user_func_array([$controller, $action], static::$params);
                 $controller->after($action);
+
             }
         }
+
+        return json_response($response['code'], [
+            'data' => $response['body'],
+            'errors' => $response['errors']
+        ]);
 
 
     }
