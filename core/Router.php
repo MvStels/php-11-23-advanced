@@ -24,6 +24,7 @@ class Router
 
     static  public function dispatch( string $uri):string
     {
+        $data = [];
 
         $uri = static::removeQueryVariables($uri);
         $uri = trim($uri, '/');
