@@ -8,7 +8,6 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
@@ -24,6 +23,10 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'R' => 
+        array (
+            'ReallySimpleJWT\\' => 16,
         ),
         'P' => 
         array (
@@ -65,6 +68,10 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'ReallySimpleJWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
@@ -92,9 +99,17 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
     );
 
     public static $classMap = array (
+        'App\\Controllers\\Api\\AuthController' => __DIR__ . '/../..' . '/app/Controllers/Api/AuthController.php',
+        'App\\Controllers\\Api\\BaseApiController' => __DIR__ . '/../..' . '/app/Controllers/Api/BaseApiController.php',
+        'App\\Controllers\\Api\\FoldersController' => __DIR__ . '/../..' . '/app/Controllers/Api/FoldersController.php',
         'App\\Models\\Folder' => __DIR__ . '/../..' . '/app/Models/Folder.php',
         'App\\Models\\Note' => __DIR__ . '/../..' . '/app/Models/Note.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Validators\\Auth\\AuthValidator' => __DIR__ . '/../..' . '/app/Validators/Auth/AuthValidator.php',
+        'App\\Validators\\Auth\\Base' => __DIR__ . '/../..' . '/app/Validators/Auth/Base.php',
+        'App\\Validators\\Auth\\RegisterValidator' => __DIR__ . '/../..' . '/app/Validators/Auth/RegisterValidator.php',
+        'App\\Validators\\BaseValidator' => __DIR__ . '/../..' . '/app/Validators/BaseValidator.php',
+        'App\\Validators\\Folders\\CreateFolderValidator' => __DIR__ . '/../..' . '/app/Validators/Folders/CreateFolderValidator.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Core\\Config' => __DIR__ . '/../..' . '/core/Config.php',
@@ -152,6 +167,28 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',
         'PhpOption\\Some' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Some.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'ReallySimpleJWT\\Build' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Build.php',
+        'ReallySimpleJWT\\Decode' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Decode.php',
+        'ReallySimpleJWT\\Encoders\\EncodeHS256' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Encoders/EncodeHS256.php',
+        'ReallySimpleJWT\\Encoders\\EncodeHS256Strong' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Encoders/EncodeHS256Strong.php',
+        'ReallySimpleJWT\\Exception\\BuildException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/BuildException.php',
+        'ReallySimpleJWT\\Exception\\EncodeException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/EncodeException.php',
+        'ReallySimpleJWT\\Exception\\JwtException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/JwtException.php',
+        'ReallySimpleJWT\\Exception\\ParsedException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/ParsedException.php',
+        'ReallySimpleJWT\\Exception\\TokensException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/TokensException.php',
+        'ReallySimpleJWT\\Exception\\ValidateException' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Exception/ValidateException.php',
+        'ReallySimpleJWT\\Helper\\Base64' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Helper/Base64.php',
+        'ReallySimpleJWT\\Helper\\JsonEncoder' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Helper/JsonEncoder.php',
+        'ReallySimpleJWT\\Helper\\Validator' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Helper/Validator.php',
+        'ReallySimpleJWT\\Interfaces\\Decode' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Interfaces/Decode.php',
+        'ReallySimpleJWT\\Interfaces\\Encode' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Interfaces/Encode.php',
+        'ReallySimpleJWT\\Interfaces\\Validator' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Interfaces/Validator.php',
+        'ReallySimpleJWT\\Jwt' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Jwt.php',
+        'ReallySimpleJWT\\Parse' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Parse.php',
+        'ReallySimpleJWT\\Parsed' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Parsed.php',
+        'ReallySimpleJWT\\Token' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Token.php',
+        'ReallySimpleJWT\\Tokens' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Tokens.php',
+        'ReallySimpleJWT\\Validate' => __DIR__ . '/..' . '/rbdwllr/reallysimplejwt/src/Validate.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/AmqpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ArgsStub.php',
@@ -189,6 +226,7 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         'Symfony\\Component\\VarDumper\\Caster\\StubCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/StubCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\SymfonyCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/SymfonyCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\TraceStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/TraceStub.php',
+        'Symfony\\Component\\VarDumper\\Caster\\UninitializedStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/UninitializedStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\UuidCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/UuidCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\XmlReaderCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/XmlReaderCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\XmlResourceCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/XmlResourceCaster.php',

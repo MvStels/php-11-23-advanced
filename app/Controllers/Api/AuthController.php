@@ -24,10 +24,14 @@ class AuthController extends Controller
                 200,
                 User::find($id)->toArray()
             );
-            return $this->response(200, [], $validator->getErrors());
-
 
         }
+            return $this->response(200, [], $validator->getErrors());
+        }
+
+        public function signin(): array
+    {
+
         $data = requestBody();
         $validator = new AuthValidator();
 

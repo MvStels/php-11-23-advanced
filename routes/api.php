@@ -7,7 +7,7 @@
 
 
 \Core\Router::add('api/auth/login', [
-    'controller' => \app\Controllers\Api\AuthController::class,
+    'controller' => \App\Controllers\Api\AuthController::class,
     'action' => 'signin',
     'method' => 'POST'
 ]);
