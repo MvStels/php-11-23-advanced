@@ -13,6 +13,7 @@ return array(
     'ReallySimpleJWT\\' => array($vendorDir . '/rbdwllr/reallysimplejwt/src'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
+    'Enums\\' => array($baseDir . '/enums'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Core\\' => array($baseDir . '/core'),
     'Config\\' => array($baseDir . '/config'),

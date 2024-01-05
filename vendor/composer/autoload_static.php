@@ -36,6 +36,10 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         array (
             'GrahamCampbell\\ResultType\\' => 26,
         ),
+        'E' => 
+        array (
+            'Enums\\' => 6,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -79,6 +83,10 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'Enums\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/enums',
         ),
         'Dotenv\\' => 
         array (
@@ -159,6 +167,8 @@ class ComposerStaticInitd5ccea449f37c1ede5ff142d77789ce0
         'Dotenv\\Util\\Regex' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Util/Regex.php',
         'Dotenv\\Util\\Str' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Util/Str.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'Enums\\SQL' => __DIR__ . '/../..' . '/enums/SQL.php',
+        'Enums\\SqlOrder' => __DIR__ . '/../..' . '/enums/SqlOrder.php',
         'GrahamCampbell\\ResultType\\Error' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Error.php',
         'GrahamCampbell\\ResultType\\Result' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Result.php',
         'GrahamCampbell\\ResultType\\Success' => __DIR__ . '/..' . '/graham-campbell/result-type/src/Success.php',
